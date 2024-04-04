@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* App */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.25rem;
+  max-width: 900px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.App>span{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+
+
+
+/* Genre Filter Component */
+
+.genreFilter{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #F1EFF1;
+  padding: 0.8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.genreButtonContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-color: #D6D5D6;
 }
+
+button:hover{
+  background-color: #B7B5B7;
+}
+
+
+
+/* MoviesList Component */
+
+
+.moviesList{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.moviesList td, .moviesList th{
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tbody tr:hover {
+  background-color: #F1EFF1;
+}
+
+thead{
+  background-color: #F1EFF1;
+}
+
+
+
+
+
+
